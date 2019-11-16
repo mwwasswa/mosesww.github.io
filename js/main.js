@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
             // find how far it is from current slide
             var diff = newslide - currSlide - 1;
             showSlide(diff); // show that slide
-            // e.preventDefault();
+            e.preventDefault();
         });
 
         $(window).resize(function(){
