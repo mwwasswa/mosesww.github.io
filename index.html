@@ -22,14 +22,14 @@ http://www.templatemo.com/tm-512-moonlight
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
            (function(){
               emailjs.init("user_ZCvEYyWk58veID6nWW5Cm");
            })();
-        </script>
+        </script> -->
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         window.onload = function() {
             document.getElementById('contact').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -38,7 +38,7 @@ http://www.templatemo.com/tm-512-moonlight
                 emailjs.sendForm('contact_service', 'contact_template', this);
             });
         }
-      </script>
+      </script> -->
 
     </head>
 
@@ -385,24 +385,24 @@ http://www.templatemo.com/tm-512-moonlight
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form id="contact">
+                        <form id="contact" action="https://usebasin.com/f/62f2b735c9e8" method="POST">
                             <div class="row">
                                 <div class="col-md-12">
                                   <input type="hidden" name="contact_number">
                                   <fieldset>
-                                    <input name="user_name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <input name="user_email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
                                   </fieldset>
                                 </div>
-                                 <!-- <div class="col-md-12">
+                                 <div class="col-md-12">
                                   <fieldset>
                                     <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
                                   </fieldset>
-                                </div> -->
+                                </div>
                                 <div class="col-md-12">
                                   <fieldset>
                                     <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
@@ -410,8 +410,8 @@ http://www.templatemo.com/tm-512-moonlight
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <!-- <button type="submit" id="form-submit" class="btn">Send Now</button> -->
-                                    <input type="submit" value="Send">
+                                    <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                    <!-- <input type="submit" value="Send"> -->
                                   </fieldset>
                                 </div>
                             </div>
